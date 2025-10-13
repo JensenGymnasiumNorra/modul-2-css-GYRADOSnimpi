@@ -22,3 +22,4 @@ Vi kommer köra spelet https://flukeout.github.io/ genom exam.net
 
 # Anteckningar
 Anteckna kort här vad du har gjort för förändringar på sidan i denna uppgift.
+
