@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    /* Lägger till lite extra utrymme för att testa "Gå till toppen" länken */
+    min-height: 200vh; 
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* 9.4 & 9.7: text-shadow på <h3> */
+h3 {
+    color: #333;
+    font-size: 1.8em;
+    /* text-shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+}
+
+/* 9.9: box-shadow på diven */
+.box-shadow-div {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    /* box-shadow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* 9.11: Hover-effekt */
+.hover-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    transition: background-color 0.3s; 
+}
+
+/* CSS så att när man hoverar över texten blir textfärgen blå */
+.hover-box:hover h2 {
+    color: #007bff; /* Ändrar färg vid hover */
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+/* 9.12: Gradient div */
+.gradient-box {
+    height: 200px; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 8px;
+
+    /* gradient */
+    background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%); 
+}
+
+/* 9.14: Gå högst upp på sidan länk (position: fixed) */
+.to-top-link {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    /* position: fixed */
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+/* --- 9.17: Dropdown Menu (Extra) --- */
+
+.dropdown-nav-container {
+    display: flex;
+    justify-content: flex-end; /* Flyttar allt till höger */
+    align-items: center;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: auto; /* Trycker ut dropdown-menyn till höger */
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #0056b3; 
+    color: white;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

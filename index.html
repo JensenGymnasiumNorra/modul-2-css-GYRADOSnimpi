@@ -1,36 +1,124 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>StudyBoost</title>
-	<link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>StudyBoost - Din väg till akademisk framgång</title>
 </head>
 <body>
-	<header>
-		<h1>StudyBoost</h1>
-	</header>
 
-	<nav>
-		<a href="index.html">Start</a>
-		<a href="kontakt.html">Kontakt</a>
-	</nav>
+    <div class="fixed-button">
+        Toppen!
+    </div>
 
-	<main>
-		<section>
-			<h2>Om oss</h2>
-			<p>Bättre än km.se och NOK</p>
-		</section>
+    <header>
+        <h1>StudyBoost: Plugga smartare</h1>
+    </header>
 
-		<section>
-			<h2>Nyheter</h2>
-			<p>Här hittar du nyheter</p>
-		</section>
-	</main>
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="resurser.html">Resurser</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <div class="page-content-wrapper"> 
+        
+        <aside class="sidebar">
+            <div class="poang-box">
+                <h2>POÄNG</h2>
+                <p class="poang-siffra">2630</p>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#">Översikt</a></li>
+                    <li><a href="#">Teori & övningar</a></li>
+                    <li><a href="#">Mina lösningar</a></li>
+                    <li><a href="#">Mina diagnoser</a></li>
+                    <li><a href="#">Inställningar</a></li>
+                    <li><a href="#">Programmering</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-	<footer>
-		<p>Kontakt: information.studyboost@gmail.com  Tel: 072-717 23 03</p>
-	</footer>
+        <main>
+            
+            <section class="flex-section">
+                <h2>📊 Daglig Översikt (Grid)</h2>
+
+                <div class="grid-stats-container">
+                    <div class="grid-item">0</div>
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">0</div>
+                    <div class="grid-item">1</div>
+                </div>
+                
+                <p>Upptäck nya böcker och digitala kurser inom ämnena matematik, programmering och språk. Allt för att du ska lyckas med dina studier!</p>
+                <ul>
+                    <li>Ny digital kurs i Python programmering</li>
+                    <li>Matematik 4 för gymnasiet - ny utgåva</li>
+                    <li>Webbinarium: Effektiv studieteknik</li>
+                </ul>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                <p>Scrolla ner en bit för att se Fixed och Sticky fungera!</p>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+            </section>
+
+            <section class="relative-container main-content-area">
+                <div class="absolute-info">i</div>
+                
+                <h2>🚀 Uppgift 8: Grid-layout (Tävlingar)</h2>
+
+                <div class="grid-competition-container">
+                    
+                    <div class="grid-comp-card">
+                        <h3>SVERIGEKAMPEN</h3>
+                        <p>1. SS: 770 p</p>
+                        <p>2. Ebba E: 430 p</p>
+                    </div>
+                    
+                    <div class="grid-comp-card">
+                        <h3>KLASSKAMPEN</h3>
+                        <p>1. M4(spec): 770 p</p>
+                        <p>2. MA23A: 246 p</p>
+                    </div>
+                    
+                </div>
+
+                <p>
+                    Denna paragraf demonstrerar hur Grid (ovan) och Flexbox (i sidomenyn) används för moderna layouter, medan Float-elementet nedan är kvar som demonstration.
+                </p>
+
+                <div class="float-right-box">
+                    <p>Flyter Höger!</p>
+                </div>
+
+                <div style="clear: both;"></div> 
+
+                <h1 class="special-rubrik">
+                    Extra Rubrik (Annan styling än den vanliga H1)
+                </h1>
+
+                <div class="bakgrunds-ruta">
+                    Denna div har klassen 'bakgrunds-ruta' och får en ljusgrön bakgrund.
+                </div>
+
+                <div class="viktig-text">
+                    Denna div har klassen 'viktig-text' och texten är fet och röd.
+                </div>
+            </section>
+
+        </main>
+        
+    </div> <footer>
+        <p>StudyBoost AB | Fakegatan 15, 123 45 Stockholm</p>
+        <p>E-post: info@studyboost.se | Telefon: 08-123 45 67</p>
+    </footer>
+    
 </body>
 </html>
