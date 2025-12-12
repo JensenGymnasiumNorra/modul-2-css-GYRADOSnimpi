@@ -4,26 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    
-    <title>StudyBoost - Din väg till akademisk framgång</title>
+    <title>StudyBoost - Resurser</title>
 </head>
+
 <body>
 
     <div class="fixed-button">
         Toppen!
     </div>
 
-    <header>
-        <h1>StudyBoost</h1>
-    </header>
 
-    <nav class="sticky-nav">
-        <ul style="margin-top: 20px; margin-bottom: 20px;">
-            <li><a href="kontakt.html">Hem</a></li>
-            <li><a href="resurser.html">Resurser</a></li>
-            <li><a href="index.html">Inställningar</a></li>
-        </ul>
-    </nav>
+<header>
+    <h1>StudyBoost</h1>
+</header>
 
-</head>
+<nav class="sticky-nav">
+    <ul style="margin-top: 20px; margin-bottom: 20px;">
+        <li><a href="kontakt.html">Hem</a></li>
+        <li><a href="resurser.html">Resurser</a></li>
+        <li><a href="index.html">Inställningar</a></li>
+    </ul>
+</nav>
+
+<main class="content-wrapper">
+  <section class="hero-section">
+    <h2>Resurser</h2>
+    <p>Här samlar vi allt du behöver för att plugga smartare – mallar, länkar och tips.</p>
+  </section>
+
+  <section class="resources-grid">
+
+    <article class="resource-card">
+      <h3>Planeringsmallar</h3>
+      <p>Få koll på veckan, prov och inlämningar.</p>
+      <ul>
+        <li><a href="#">Veckoplanering (PDF)</a></li>
+        <li><a href="#">Provplanering (PDF)</a></li>
+        <li><a href="#">Studievecka inför NP (PDF)</a></li>
+      </ul>
+    </article>
+
+    <article class="resource-card">
+      <h3>Nationella prov & övningar</h3>
+      <p>Träna på gamla prov och uppgifter.</p>
+      <ul>
+        <li><a href="https://shorturl.at/CRaAd" target="_blank" rel="noopener noreferrer">Gamla NP i matematik (Skolverket)</a></li>
+        <li><a href="#">Repetitionsblad – matte 1–3 (PDF)</a></li>
+        <li><a href="https://docs.google.com/document/d/12SbGh84abgSrhvXXiqkMhIUw5gZvnJ6j9osh7Qj10PQ/edit?tab=t.0" target="_blank" rel="noopener noreferrer">Checklista inför NP</a></li>
+      </ul>
+    </article>
+
+    <article class="resource-card">
+      <h3>Studieteknik</h3>
+      <p>Lär dig plugga effektivt, inte längre.</p>
+      <ul>
+        <li><a href="#">Guide: Så pluggar du matte</a></li>
+        <li><a href="#">Guide: Så skriver du bättre texter</a></li>
+        <li><a href="#">Pomodoro-mall (25/5-minuter)</a></li>
+      </ul>
+    </article>
+
+    <article class="resource-card">
+      <h3>Video & länkar</h3>
+      <p>Våra favoritresurser online.</p>
+      <ul>
+        <li><a href="https://www.youtube.com/@vikstromjonas">YouTube – mattekanal</a></li>
+        <li><a href="">YouTube – studieteknik</a></li> <!--Gör en egen docs för att skriva in studieteknik-->
+        <li><a href="">Länkar till bra sidor</a></li> <!-- pot kan ej visa konkurrenter, länka till en annan kod länk-->
+      </ul>
+    </article>
+
+  </section>
+</main>
 </body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+</html>

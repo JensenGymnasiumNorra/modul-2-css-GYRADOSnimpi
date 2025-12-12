@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyBoost - Logga in</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <main class="content-wrapper" style="max-width: 400px; margin-top: 80px;">
+    <h2>Logga in</h2>
+    <p>Skriv in din e-post och lösenord.</p>
+
+    <input id="email" type="text" placeholder="E-post" style="width:100%; padding:10px; margin-bottom:10px;">
+    <input id="password" type="password" placeholder="Lösenord" style="width:100%; padding:10px; margin-bottom:10px;">
+
+    <button onclick="login()" style="width:100%; padding:10px;">Logga in</button>
+  </main>
+
+
+  <script>
+function login() {
+    const email = document.getElementById("email").value;
+    const pw = document.getElementById("password").value;
+
+    const correctEmail = "gergoo070803@student.jenseneducation.se";
+    const correctPassword = "1234";
+
+    if (email === correctEmail && pw === correctPassword) {
+        localStorage.setItem("loggedIn", "true");
+        window.location.href = "kontakt.html"
+    } else {
+        alert("Fel e-post eller lösenord.");
+    }
+}
+</script>
+
+<script>
+function login() {
+    const email = document.getElementById("email").value;
+    const pw = document.getElementById("password").value;
+
+    const correctEmail = "gergoo070803@student.jenseneducation.se";      
+    if (email === correctEmail && pw === correctPassword) {
+        localStorage.setItem("loggedIn", "true");
+        window.location.href = "kontakt.html"; 
+    } else {
+        alert("Fel e-post eller lösenord.");
+    }
+}
+
+<button onclick="login()">Logga in</button>
+
+
+</script>
+
+</body>
+</html>
