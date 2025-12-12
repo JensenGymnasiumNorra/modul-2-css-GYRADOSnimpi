@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     
-    <title>StudyBoost - Din väg till akademisk framgång</title>
+    <title>StudyBoost - Inställningar</title>
 </head>
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
 <body>
 
     <div class="fixed-button">
@@ -19,8 +25,9 @@
 
     <nav class="sticky-nav">
         <ul style="margin-top: 20px; margin-bottom: 20px;">
-            <li><a href="index.html">Inte hem</a></li>
-            <li><a href="resurser.html">Resurser</a></li>
             <li><a href="kontakt.html">Hem</a></li>
+            <li><a href="resurser.html">Resurser</a></li>
+            <li><a href="index.html">Inställningar</a></li>
         </ul>
     </nav>
+
